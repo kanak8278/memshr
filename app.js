@@ -21,7 +21,7 @@ const getMemes = (callback)=>{
 
 getMemes((err, data) => {
     if(data){
-        console.log(data);
+        // console.log();
     }else{
         console.log(err);
         document.body.innerHTML ="<h1>404 Not Found</h1>";
@@ -47,16 +47,16 @@ addMeme = (element) =>{
     caption.classList = "figure-caption mt-2";
     caption.innerText =element.caption;
 
-    var date = document.createElement("div");
-    date.className = "card-subtitle text-muted mb-2";
-    date.innerText = element.updatedAt;
+    // var date = document.createElement("div");
+    // date.className = "card-subtitle text-muted mb-2";
+    // date.innerText = element.updatedAt;
     
 
     var writer = document.createElement("div");
     writer.className = "card-subtitle mb-2";
     writer.innerText = element.name;
 
-    childDiv.appendChild(date);
+    // childDiv.appendChild(date);
     childDiv.appendChild(writer);
     childDiv.appendChild(x);
     childDiv.appendChild(caption);
